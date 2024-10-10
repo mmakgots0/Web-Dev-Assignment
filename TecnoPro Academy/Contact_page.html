@@ -1,0 +1,111 @@
+<DOCTYPE HTML>
+<html>
+  <head>
+    <title> Contact_page</title>
+  </head>
+  <body>
+  <style>
+    body{
+	 background-image: url('Background.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     color:white;
+	
+	}
+    header{
+	 text-align:center;
+	 text-decoration: underline;
+	 padding-bottom:10px;
+	}
+	h5{
+	 text-decoration: bold;
+	}
+
+    .main{
+     padding: 20px 80px;
+     width: 30vw;
+     height: 20vw;
+     border-radius: 30px;
+	 background-image: url('images4.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+	 color:white;
+	 display:flex;
+	 flex-wrap:wrap;
+	 
+	
+	}
+	.form{
+     height: 70px;
+	 display:flex;
+	
+	 flex-direction:column;
+	
+	 gap:1rem;
+    }
+	.lable{
+     
+     height: 50px;
+	 gap:25rem;
+	}
+	.checkbox{
+	display:flex;
+	flex-wrap:wrap;
+
+	 padding: 5px 80px;
+	}
+	button{
+	display:flex;
+	flex-wrap:wrap;
+	width: 55px;
+   height:26px;
+	}
+  </style>
+    
+    <header>
+	<h1>Contact Page</h1>
+	</header>
+	<h3> For more information you can get in contact us using the following contact methods:</h3>
+	<h4>Phone us on:</h4>
+	  <p>->(011) 257 7869  or  +27 84 205 2626</p>
+	<h4>Or email us on:</h4>
+	<p>->TechnoProADM51@IT.co.za
+	<h4> Or visit or warehouse with the address below:</h4>
+	<p>->1809 Link Ave</br> Mondeor,Johannesburg</br>1800</br> P.O BOX</p>
+	
+	<main class="main">
+	 <h3> Kindly fill in the form below:</h3>
+	 <form class="form">
+      <lable>
+       Name
+       <input type="text"placeholder="name & surname">
+      </lable>
+      <lable>
+       Email
+       <input type="email"placeholder="@gmail.com">
+      </lable>
+      <lable>
+       Message
+       <input type="text"placeholder="Message">
+      </lable>
+      <div class="checkbox">
+       <input type="checkbox"> 
+	   <p>I agree to the terms & privacy</p>
+	  </div>
+	  </form>
+	 <button onclick="DisplayResult()">Submit</button>
+      <div id="return"></div>
+      </div>
+      
+   <main>
+   <script>
+   function DisplayResult(){
+    const returnElement= document.getElementByID("return");
+	returnElement.textContent="thank you! Submission successful.";
+	document.getElementById('return').innerHTML += returnElement.textContent;
+   }
+   </script>
+  </body> 
+<html>
